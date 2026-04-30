@@ -1,36 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata"   
     <types>
-        <members>*</members>
+        <members>QuestionnaireApiModels</members>
+        <members>QuestionnaireResource</members>
+        <members>ResponseAnswerResource</members>
+        <members>ResponseResource</members>
+        <members>ResultResource</members>
+        <members>UIBundleAuthUtils</members>
+        <members>UIBundleChangePassword</members>
+        <members>UIBundleForgotPassword</members>
+        <members>UIBundleLogin</members>
+        <members>UIBundleRegistration</members>
         <name>ApexClass</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
-    <version>66.0</version>
+	<types>
+		<members>Answer_Option__c</members>
+		<members>Question__c</members>
+		<members>Questionnaire__c</members>
+		<members>Response_Answer__c</members>
+		<members>Response__c</members>
+		<members>Result__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>jungianpersonalitytestapp</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
+		<members>Answer_Option__c</members>
+		<members>Question__c</members>
+		<members>Questionnaire__c</members>
+		<members>Response__c</members>
+		<members>Result__c</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>site/jungianpersonalitytestapp1.sfdc_cms__site/jungianpersonalitytestapp1</members>
+		<name>DigitalExperience</name>
+	</types>
+	<types>
+		<members>site/jungianpersonalitytestapp1</members>
+		<name>DigitalExperienceBundle</name>
+	</types>
+	<types>
+		<members>jungianpersonalitytestapp1</members>
+		<name>DigitalExperienceConfig</name>
+	</types>
+	<types>
+		<members>Answer_Option__c-Answer Option Layout</members>
+		<members>Question__c-Question Layout</members>
+		<members>Questionnaire__c-Questionnaire Layout</members>
+		<members>Response_Answer__c-Response Answer Layout</members>
+		<members>Response__c-Response Layout</members>
+		<members>Result__c-Result Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>jungianpersonalitytestapp</members>
+		<name>Network</name>
+	</types>
+	<types>
+		<members>Questionnaire_Admin</members>
+		<members>Questionnaire_Guest_User</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>66.0</version>
 </Package>
