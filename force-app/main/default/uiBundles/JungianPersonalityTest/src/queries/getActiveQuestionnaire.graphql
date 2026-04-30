@@ -1,0 +1,21 @@
+query GetActiveQuestionnaire {
+  uiapi {
+    query {
+      Questionnaire__c(
+        where: { Is_Active__c: { eq: true } }
+        first: 1
+        orderBy: { CreatedDate: { order: DESC } }
+      ) {
+        edges {
+          node {
+            Id
+            Is_Active__c { value }
+            Name @optional { value }
+            Introduction_Text__c @optional { value }
+            Questions_Per_Page__c @optional { value }
+          }
+        }
+      }
+    }
+  }
+}

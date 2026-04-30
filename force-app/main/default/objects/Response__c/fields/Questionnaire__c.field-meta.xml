@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Questionnaire__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description
+  >Links this response to the questionnaire that was completed.</description>
+    <inlineHelpText
+  >The questionnaire this response is associated with.</inlineHelpText>
+    <label>Questionnaire</label>
+    <referenceTo>Questionnaire__c</referenceTo>
+    <relationshipLabel>Responses</relationshipLabel>
+    <relationshipName>Responses</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

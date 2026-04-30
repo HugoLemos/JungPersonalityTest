@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Answer_Text__c</fullName>
+    <description
+  >The text content of this answer option displayed to users.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText
+  >Enter the answer text that will be shown to users as a selectable option.</inlineHelpText>
+    <label>Answer Text</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

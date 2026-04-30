@@ -1,0 +1,18 @@
+mutation CreateResponseAnswer($responseId: ID!, $questionId: ID!, $answerOptionId: ID!) {
+  uiapi(input: { allOrNone: true }) {
+    Response_Answer__cCreate(
+      input: {
+        Response_Answer__c: {
+          Response__c: $responseId
+          Question__c: $questionId
+          Answer_Option__c: $answerOptionId
+          Answered_Date__c: { literal: NOW }
+        }
+      }
+    ) {
+      Record {
+        Id
+      }
+    }
+  }
+}

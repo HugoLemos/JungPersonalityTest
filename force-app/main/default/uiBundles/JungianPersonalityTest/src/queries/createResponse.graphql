@@ -1,0 +1,18 @@
+mutation CreateResponse($questionnaireId: ID!, $sessionId: String!) {
+  uiapi(input: { allOrNone: true }) {
+    Response__cCreate(
+      input: {
+        Response__c: {
+          Questionnaire__c: $questionnaireId
+          Session_Id__c: $sessionId
+          Started_Date__c: { literal: NOW }
+        }
+      }
+    ) {
+      Record {
+        Id
+        Name { value }
+      }
+    }
+  }
+}

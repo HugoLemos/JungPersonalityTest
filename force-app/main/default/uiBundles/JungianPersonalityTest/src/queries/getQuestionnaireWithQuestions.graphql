@@ -1,0 +1,37 @@
+query GetQuestionnaireWithQuestions($questionnaireId: ID!) {
+  uiapi {
+    query {
+      Questionnaire__c(
+        where: { Id: { eq: $questionnaireId } }
+        first: 1
+      ) {
+        edges {
+          node {
+            Id
+            Name @optional { value }
+            Questions_Per_Page__c @optional { value }
+            Questions__r @optional(first: 100, orderBy: { Order__c: { order: ASC } }) {
+              edges {
+                node {
+                  Id
+                  Question_Text__c @optional { value }
+                  Order__c @optional { value }
+                  Answer_Options__r @optional(first: 10, orderBy: { Order__c: { order: ASC } }) {
+                    edges {
+                      node {
+                        Id
+                        Answer_Text__c @optional { value }
+                        Classification__c @optional { value }
+                        Order__c @optional { value }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

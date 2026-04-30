@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description
+  >Indicates whether this questionnaire is currently active and available for users to complete.</description>
+    <inlineHelpText
+  >Check this box to make the questionnaire available to users. Uncheck to deactivate it.</inlineHelpText>
+    <label>Is Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

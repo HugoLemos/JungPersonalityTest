@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <description
+  >The Jungian personality classification associated with this answer option.</description>
+    <inlineHelpText
+  >Select the Jungian cognitive function or attitude this answer represents: Extroverted, Introverted, Thinking, Feeling, Intuition, or Sensing.</inlineHelpText>
+    <label>Classification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Extroverted</fullName>
+                <default>false</default>
+                <label>Extroverted</label>
+            </value>
+            <value>
+                <fullName>Introverted</fullName>
+                <default>false</default>
+                <label>Introverted</label>
+            </value>
+            <value>
+                <fullName>Thinking</fullName>
+                <default>false</default>
+                <label>Thinking</label>
+            </value>
+            <value>
+                <fullName>Feeling</fullName>
+                <default>false</default>
+                <label>Feeling</label>
+            </value>
+            <value>
+                <fullName>Intuition</fullName>
+                <default>false</default>
+                <label>Intuition</label>
+            </value>
+            <value>
+                <fullName>Sensing</fullName>
+                <default>false</default>
+                <label>Sensing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

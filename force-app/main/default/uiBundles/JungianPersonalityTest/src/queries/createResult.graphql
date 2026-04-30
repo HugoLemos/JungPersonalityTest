@@ -1,0 +1,41 @@
+mutation CreateResult(
+  $responseId: ID!
+  $dominantFunction: String!
+  $auxiliaryFunction: String!
+  $tertiaryFunction: String!
+  $inferiorFunction: String!
+  $extrovertedscore: Double!
+  $introvertedscore: Double!
+  $thinkingScore: Double!
+  $feelingScore: Double!
+  $intuitionScore: Double!
+  $sensingScore: Double!
+) {
+  uiapi(input: { allOrNone: true }) {
+    Result__cCreate(
+      input: {
+        Result__c: {
+          Response__c: $responseId
+          Dominant_Function__c: $dominantFunction
+          Auxiliary_Function__c: $auxiliaryFunction
+          Tertiary_Function__c: $tertiaryFunction
+          Inferior_Function__c: $inferiorFunction
+          Extroverted_Score__c: $extrovertedscore
+          Introverted_Score__c: $introvertedscore
+          Thinking_Score__c: $thinkingScore
+          Feeling_Score__c: $feelingScore
+          Intuition_Score__c: $intuitionScore
+          Sensing_Score__c: $sensingScore
+        }
+      }
+    ) {
+      Record {
+        Id
+        Dominant_Function__c { value }
+        Auxiliary_Function__c { value }
+        Tertiary_Function__c { value }
+        Inferior_Function__c { value }
+      }
+    }
+  }
+}

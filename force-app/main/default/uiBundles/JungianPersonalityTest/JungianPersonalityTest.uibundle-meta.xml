@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description
+  >Jungian personality assessment questionnaire application</description>
+    <isActive>true</isActive>
+    <masterLabel>Jungian Personality Test</masterLabel>
+    <target>Experience</target>
+    <version>1</version>
+</UIBundle>

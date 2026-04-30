@@ -1,0 +1,26 @@
+query GetResult($responseId: ID!) {
+  uiapi {
+    query {
+      Result__c(
+        where: { Response__c: { eq: $responseId } }
+        first: 1
+      ) {
+        edges {
+          node {
+            Id
+            Dominant_Function__c @optional { value }
+            Auxiliary_Function__c @optional { value }
+            Tertiary_Function__c @optional { value }
+            Inferior_Function__c @optional { value }
+            Extroverted_Score__c @optional { value }
+            Introverted_Score__c @optional { value }
+            Thinking_Score__c @optional { value }
+            Feeling_Score__c @optional { value }
+            Intuition_Score__c @optional { value }
+            Sensing_Score__c @optional { value }
+          }
+        }
+      }
+    }
+  }
+}

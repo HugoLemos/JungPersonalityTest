@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Questions_Per_Page__c</fullName>
+    <defaultValue>1</defaultValue>
+    <description
+  >Configures how many questions are displayed on each page of the questionnaire.</description>
+    <externalId>false</externalId>
+    <inlineHelpText
+  >Enter the number of questions to display per page (e.g., 1 for one question at a time, 5 for five questions per page).</inlineHelpText>
+    <label>Questions Per Page</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
