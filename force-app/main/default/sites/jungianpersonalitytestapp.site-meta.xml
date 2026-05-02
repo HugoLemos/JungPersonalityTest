@@ -11,8 +11,7 @@
     <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
     <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
     <browserXssProtection>true</browserXssProtection>
-    <cachePublicVisualforcePagesInProxyServers
-  >true</cachePublicVisualforcePagesInProxyServers>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
     <enableAuraRequests>true</enableAuraRequests>
@@ -22,12 +21,10 @@
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>jungianpersonalitytestapp</masterLabel>
     <redirectToCustomDomain>false</redirectToCustomDomain>
-    <referrerPolicyOriginWhenCrossOrigin
-  >true</referrerPolicyOriginWhenCrossOrigin>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>hugo.lemos@dualgroup.com.prod</siteAdmin>
-    <siteGuestRecordDefaultOwner
-  >hugo.lemos@dualgroup.com.prod</siteGuestRecordDefaultOwner>
+    <siteAdmin>hugolemos@awesome.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>hugolemos@awesome.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>dualgroup</subdomain>
     <urlPathPrefix>jungianpersonalityvforcesite</urlPathPrefix>
